@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,00,900&display=swap');
+*
+
+#description1{
+
+    font-family: League spartan, Geneva, Verdana, sans-serif;
+    width: 10in;
+    height: 4in;
+    background-color:glass transparent;
+    padding-left: 320px;
+    padding-right:320px;
+    margin-top:80px;
+    outline-style:none;
+    outline-color:rgb(0, 0, 0);
+    
+}
+
+#description1:hover{
+
+    font-style: italic;
+    color:rgb(255, 255, 255);
+    background-image:url("cool.jpg");
+    background-position: top center;
+    transition: all 900ms ease-in-out;
+    background-repeat: repeat;
+    outline-style: solid;
+    outline-color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+
+#description2{
+
+    font-family: League spartan, Geneva, Verdana, sans-serif;
+    width: 10in;
+    height: 7in;
+    background-color:glass transparent;
+    padding-left: 320px;
+    padding-right:320px;
+    margin-top:2350px;
+    outline-style:none;
+    outline-color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+
+}
+
+#description2:hover{
+
+    font-style: italic;
+    color:rgb(255, 255, 255);
+    background-image:url("python.png");
+    background-position: top center;
+    transition: all 900ms ease-in-out;
+    background-repeat: repeat;
+    outline-style: solid;
+    outline-color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+
+
+
+.title{
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+
+
+.p-tags{
+
+    font-size: 20px;
+    padding-top: 5px;
+    text-align: center;
+    font-weight:lighter;
+    text-decoration: none;
+
+}
+
+#scroll-bar {
+    transition: all 900ms ease-in-out;
+    height: 4400px; 
+    overflow-y: auto;
+}
+
+
+#about-btn{
+    background-color:rgb(255, 255, 255);
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 400px;
+    padding-left: 50px;
+    padding-right:  50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#about-btn:hover{
+    
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border-radius: 20px;
+
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#triangle1{ 
+
+    margin-left:100px ;
+    margin-top:70px ;
+    animation: mySpinner1 4s;
+    animation-iteration-count: infinite;
+    transition: all 900ms ease-in-out;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid rgb(0, 0, 0);
+    background-color:transparent;
+
+}
+
+#special{
+    padding-top: 70px;
+}
+
+@keyframes mySpinner1{
+    from{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-45deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#triangle1{ 
+
+    margin-left:100px ;
+    margin-top:70px ;
+    animation: mySpinner1 4s;
+    animation-iteration-count: infinite;
+    transition: all 900ms ease-in-out;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid rgb(0, 0, 0);
+    background-color:transparent;
+
+}
+
+/* squares */
+
+#square1{ 
+
+    transition: all 900ms ease-in-out;
+    animation: mySpinner1 4s;
+    animation-iteration-count: infinite;
+    width:40px; 
+    height:40px; 
+    margin-left: 550px;
+    margin-top:-50px ;
+    background-color:rgb(255, 255, 255);
+    outline-style: solid;
+    outline-color: black;
+}
+
+#square2{ 
+
+    transition: all 900ms ease-in-out;
+    animation: mySpinner2 4s;
+    animation-iteration-count: infinite;
+    width:40px; 
+    height:40px; 
+    margin-left: 1000px;
+    margin-top:-42px ;
+    background-color:rgb(255, 255, 255);
+    outline-style: solid;
+    outline-color: black;
+}
+
+#triangle2{ 
+
+    margin-left:1400px ;
+    margin-top:-38px ;
+    animation: mySpinner2 4s;
+    animation-iteration-count: infinite;
+    transition: all 900ms ease-in-out;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid black;
+    background-color:transparent;
+
+}
+
+@keyframes mySpinner2{
+    from{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 10px 100px;
+
+}
+
+header .logo 
+{
+    position: relative;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 0,6s;
+    
+}
+
+header ul{
+
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    margin-right: 10px;
+
+}
+
+header ul li a{
+    position: relative;
+    padding-right: 10px;
+    margin:15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    letter-spacing:2px;
+    font-weight: 500px;
+    transition:0.6s;
+}
+
+#container{
+
+    position:fixed;
+    background-position-x: relative;
+    background-position-y:fixed;
+    transition: all 900ms ease-in-out;
+    background-color: black;
+    width:1550px;
+    height:70px;
+
+}
+
+#container:hover{
+    cursor:pointer;
+}
+
+header ul li a:hover{
+    text-decoration:underline;
+    text-emphasis-color: var(12);
+}
+
+
+.spec{
+    margin-right: 150px;
+}
+
+#square3{ 
+
+    transition: all 900ms ease-in-out;
+    animation: mySpinner1 4s;
+    animation-iteration-count: infinite;
+    width:40px; 
+    height:40px; 
+    margin-left: 550px;
+    margin-top:-50px ;
+    background-color:rgb(255, 255, 255);
+    outline-style: solid;
+    outline-color: black;
+}
+
+#square4{ 
+
+    transition: all 900ms ease-in-out;
+    animation: mySpinner2 4s;
+    animation-iteration-count: infinite;
+    width:40px; 
+    height:40px; 
+    margin-left: 1000px;
+    margin-top:-42px ;
+    background-color:rgb(255, 255, 255);
+    outline-style: solid;
+    outline-color: black;
+}
+
+#triangle3{ 
+
+    margin-left:100px ;
+    margin-top:70px ;
+    animation: mySpinner1 4s;
+    animation-iteration-count: infinite;
+    transition: all 900ms ease-in-out;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid rgb(0, 0, 0);
+    background-color:transparent;
+
+}
+
+#triangle4{ 
+
+    margin-left:1400px ;
+    margin-top:-38px ;
+    animation: mySpinner2 4s;
+    animation-iteration-count: infinite;
+    transition: all 900ms ease-in-out;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid black;
+    background-color:transparent;
+
+}
+
+#footer{
+
+    color:white;
+    background-color:rgb(22, 20, 20);
+    width: 1550px;
+    height:90px;
+    text-align:left;
+    margin-top: 320px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1em;
+    letter-spacing: 2px;
+    transition: 0.6s;
+
+}
+
+#final{ 
+
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
+
+#email{ 
+
+    padding-top: 10px;
+    margin-left: 650px;
+}
+
+#final:hover{
+
+    cursor: pointer;
+ }
