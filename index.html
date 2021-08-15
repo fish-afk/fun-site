@@ -23,26 +23,35 @@
 <body>
 
     <div id="container">
+
+        <style>
+
+            #container {
+                position: fixed;
+            }
+
+        </style>
+
+
     <header>
 
 
-        <a href="#" class="logo">Black And White.</a>
+        <a href="#" class="logo"> Black And White. </a>
 
         <ul class="spec">
             
-            <li><a id="dark-mode">Dark Mode</a></li>
-            <li><a id="light-mode">Light Mode</a></li>
+            <li><a id="dark-mode"> Dark Mode </a></li>
+            <li><a id="light-mode"> Light Mode </a></li>
 
-            <li><a href="index.html" target="_blank">Home</a></li>
-            <li><a href="#" id="aboutme">About Me</a></li>
-            <li><a href="#">My Socials</a></li>
+            <li><a href="index.html" target="_blank"> Home </a></li>
+            <li><a href="#" id="aboutme"> About Me </a></li>
 
         </ul>
 
 
     </header>
-    </div>
 
+    </div>
 
     <div id="scroll-bar">
 
@@ -106,13 +115,58 @@
             <div id ="square4"></div>
             <div id="triangle4">></div>
 
+
+        <section id="my-socials">
+
+            <div id="social-links">
+
+            <img id="github" class="hover" src="github.png">
+            <img id="insta" class="hover" src="insta.png">
+            <img id="twitter" class="hover" src="twitter.png">
+            <p> <--- Socials.. </p>
+
+            <style>
+
+                #github{
+                    margin-left: 10px;
+                    margin-top: 5px;
+                }
+
+                #insta{
+                    margin-left: 20px;
+                    margin-top: 2px;
+
+                }
+
+                #twitter{
+                    margin-left:20px;
+                    margin-top: 5px;
+                }
+
+                .hover:hover{
+                    transition: all 400ms ease-in-out;
+                    outline: solid 1px white;
+                }
+
+                #social-links{
+                    transition: all 900ms ease-in-out;
+                    margin-top: 70px;
+                    width:500px;
+                    height: 70px;
+                    background-color: rgb(19, 16, 16);
+                }
+
+            </style>
+
+            </div>
+
+        </section>
+
+
             <div id="footer">
 
-                <footer>
                     <p id="email">Email me @mirzashihab2@gmail.com</p>
                     <p id="final">&copy; All rights reserved... </p>
-
-                </footer>
 
             </div>
         
