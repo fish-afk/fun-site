@@ -1,5 +1,5 @@
 let about_btn = document.getElementById('about-btn')
-let desc = document.querySelector('#description')
+let desc2 = document.querySelector('#description2')
 let body = document.getElementsByTagName('BODY')[0]
 
 const arr_of_triangs = [document.getElementById('triangle1'), document.getElementById('triangle2'),document.getElementById('triangle3'),
@@ -17,6 +17,9 @@ let top_bar = document.getElementById('container')
 let footer = document.getElementById('footer')
 let social_lnk_container = document.querySelector('#social-links')
 
+let light_mode = true
+let dark_mode = false
+
 
 // function for scrolling <smoothly>  after clicking about me...
 
@@ -28,7 +31,7 @@ function sleep(ms) {
 
 async function sleeper_scroll(){
 
-    for(let i = 0; i <= 201; i += 7){
+    for(let i = 0; i <= 190; i += 7){
 
         await sleep(25)
         window.scrollBy(0, i);
@@ -36,12 +39,17 @@ async function sleeper_scroll(){
     }
 }
 
+
+
 light_mode_lnk.addEventListener("click", function(){
 
     body.style.backgroundColor = "white"
     body.style.color = "black"
     top_bar.style.outline = "3px solid black"
-
+    
+    light_mode = true
+    dark_mode = false
+    console.log(dark_mode, light_mode)
 
 
     for(let i = 0; i <= arr_of_squares.length; i++) {
@@ -55,12 +63,18 @@ light_mode_lnk.addEventListener("click", function(){
 })
 
 
+
+
 dark_mode_lnk.addEventListener("click", function() {
 
     body.style.backgroundColor = "black"
     body.style.color = "white"
     footer.style.outline = "5px solid white"
     top_bar.style.outline = "3px solid white"
+
+    dark_mode = true
+    light_mode = false
+    console.log(dark_mode, light_mode)
 
 
     for(let i = 0; i <= arr_of_squares.length; i++) {
@@ -72,6 +86,8 @@ dark_mode_lnk.addEventListener("click", function() {
     }
 
 })
+
+
 
 social_lnk_container.addEventListener("mouseover", function(){
 
