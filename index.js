@@ -2,18 +2,20 @@ let about_btn = document.getElementById('about-btn')
 let desc = document.querySelector('#description')
 let body = document.getElementsByTagName('BODY')[0]
 
-let arr_of_triangs = [document.getElementById('triangle1'), document.getElementById('triangle2'),document.getElementById('triangle3'),
+const arr_of_triangs = [document.getElementById('triangle1'), document.getElementById('triangle2'),document.getElementById('triangle3'),
  document.getElementById('triangle4')]
 
-
-let arr_of_squares = [document.getElementById('square1'), document.getElementById('square2'),document.getElementById('square3'),
+const arr_of_squares = [document.getElementById('square1'), document.getElementById('square2'),document.getElementById('square3'),
 document.getElementById('square4')]
 
 
-let abt_me_link_click = document.getElementById('aboutme')
-let dark_mode_lnk = document.getElementById('dark-mode')
-let light_mode_lnk = document.getElementById('light-mode')
+const abt_me_link_click = document.getElementById('aboutme')
+const dark_mode_lnk = document.getElementById('dark-mode')
+const light_mode_lnk = document.getElementById('light-mode')
+
 let top_bar = document.getElementById('container')
+let footer = document.getElementById('footer')
+let social_lnk_container = document.querySelector('#social-links')
 
 
 // function for scrolling <smoothly>  after clicking about me...
@@ -38,6 +40,7 @@ light_mode_lnk.addEventListener("click", function(){
 
     body.style.backgroundColor = "white"
     body.style.color = "black"
+    top_bar.style.outline = "3px solid black"
 
 
 
@@ -56,6 +59,8 @@ dark_mode_lnk.addEventListener("click", function() {
 
     body.style.backgroundColor = "black"
     body.style.color = "white"
+    footer.style.outline = "5px solid white"
+    top_bar.style.outline = "3px solid white"
 
 
     for(let i = 0; i <= arr_of_squares.length; i++) {
@@ -67,6 +72,14 @@ dark_mode_lnk.addEventListener("click", function() {
     }
 
 })
+
+social_lnk_container.addEventListener("mouseover", function(){
+
+    social_lnk_container.style.outline = "5px solid white"
+    social_lnk_container.style.transition = "all 500ms ease-in-out"
+
+})
+
 
 abt_me_link_click.addEventListener("click", function(){
 
@@ -81,7 +94,7 @@ about_btn.addEventListener("click", function(){
 
 
 
-logos = [document.getElementById("insta"), document.getElementById("twitter"), document.getElementById('github')]
+const logos = [document.getElementById("insta"), document.getElementById("twitter"), document.getElementById('github')]
 
 
 function click_listener(logo1, logo2, logo3){
