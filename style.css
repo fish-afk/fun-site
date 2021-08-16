@@ -46,12 +46,11 @@
 
 #description2:hover{
 
-    font-style: italic;
     color:rgb(255, 255, 255);
-    background-image:url("Assets/python.png");
+    background-image:url("Assets/moon.jpg");
     background-position: top center;
     transition: all 900ms ease-in-out;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     outline-style: solid;
     outline-color: rgb(255, 255, 255);
     background-color: black;
@@ -73,9 +72,9 @@
     padding-top: 5px;
     text-align: center;
     font-weight:lighter;
-    text-decoration: none;
 
 }
+
 
 #scroll-bar {
     transition: all 900ms ease-in-out;
