@@ -20,6 +20,9 @@ let social_lnk_container = document.querySelector('#social-links')
 let light_mode = true
 let dark_mode = false
 
+let pythonpic = document.getElementById('pythonpic')
+let skills_cont = document.getElementById('skills-container')
+
 
 // function for scrolling <smoothly>  after clicking about me...
 
@@ -38,7 +41,6 @@ async function sleeper_scroll(){
     
     }
 }
-
 
 
 light_mode_lnk.addEventListener("click", function(){
@@ -113,7 +115,7 @@ about_btn.addEventListener("click", function(){
 const logos = [document.getElementById("insta"), document.getElementById("twitter"), document.getElementById('github')]
 
 
-function click_listener(logo1, logo2, logo3){
+function click_listener2(logo1, logo2, logo3){
 
     logo1.addEventListener("click", function(){
 
@@ -133,7 +135,40 @@ function click_listener(logo1, logo2, logo3){
 
 }
 
-click_listener(logos[0], logos[1], logos[2])
+click_listener2(logos[0], logos[1], logos[2])
+
+
+const logos0 = [document.getElementById('pythonpic'),document.getElementById('weblangpic'),document.getElementById('vbpic')]
+
+
+function click_listener(pic1, pic2, pic3){
+
+    pic1.addEventListener("click", function(){
+
+
+        window.open('https://www.python.org/', '_blank');
+    })
+
+    pic2.addEventListener("click", function(){
+
+
+        window.open('https://blog.hubspot.com/marketing/web-design-html-css-javascript', '_blank');
+    })
+
+    pic3.addEventListener("click", function(){
+
+
+        window.open('https://docs.microsoft.com/en-us/dotnet/visual-basic/', '_blank');
+    })
+
+
+}
+
+click_listener(logos0[0], logos0[1], logos0[2])
+
+
+
+
 
 
 
