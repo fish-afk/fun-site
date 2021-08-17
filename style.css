@@ -23,7 +23,7 @@
     background-position: top center;
     transition: all 900ms ease-in-out;
     background-repeat: repeat;
-    outline-style: solid;
+    outline-style:dotted;
     outline-color: rgb(255, 255, 255);
     background-color: black;
 }
@@ -44,19 +44,27 @@
 }
 
 #description2:hover{
-
     color:rgb(255, 255, 255);
     background-image:url("Assets/moon.jpg");
     background-position: top center;
     transition: all 900ms ease-in-out;
+    animation: mySpinner3 15s;
     background-repeat: no-repeat;
     outline-style: solid;
     outline-color: rgb(255, 255, 255);
     background-color: black;
+
 }
 
+@keyframes mySpinner3{
 
-
+    from{
+        background-position-y: -600px;
+    }
+    to{
+        background-position-y: 0px;
+    }
+}
 
 .title{
     margin-left: 10px;
@@ -388,3 +396,4 @@ header ul li a:hover{
 
     cursor: pointer;
  }
+
