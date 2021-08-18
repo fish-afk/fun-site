@@ -20,7 +20,6 @@ let social_lnk_container = document.querySelector('#social-links')
 let light_mode = true
 let dark_mode = false
 
-let pythonpic = document.getElementById('pythonpic')
 let skills_cont = document.getElementById('skills-container')
 
 
