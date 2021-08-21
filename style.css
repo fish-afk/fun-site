@@ -265,6 +265,18 @@ header .logo
     
 }
 
+header .logo:hover{
+
+    animation:kdf 4s;
+
+}
+
+@keyframes kdf {
+    from{
+    transform: rotateX(360deg);
+    }
+}
+
 header ul{
 
     position: relative;
